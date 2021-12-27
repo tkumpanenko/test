@@ -1,0 +1,13 @@
+.categories {
+	&__list {
+		display: grid;
+		grid-template-columns: repeat(4, 1fr);
+		grid-gap: 20px;
+	}
+
+	&__sub-filter{
+		display: flex;
+		align-items: center;
+		margin-bottom: 25px;
+	}
+}

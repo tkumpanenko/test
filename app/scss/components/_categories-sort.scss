@@ -1,0 +1,90 @@
+.categories-sort {
+	display: inline-block;
+
+	&__span {
+		font-size: 12px;
+		line-height: 16px;
+	}
+
+	&__select {
+	}
+
+	.jq-selectbox {
+		&__select {
+			height: 100%;
+			border: 1px solid transparent;
+			box-shadow: none;
+			font-family: "NotoSans";
+			font-weight: 400;
+			font-size: 12px;
+			line-height: 1;
+			color: $Color-primary-100;
+			text-shadow: none;
+			background: $Body-bg;
+			padding: 0 0 0 36px;
+
+			&:hover {
+				background: $Body-bg;
+			}
+		}
+
+		&__select-text {
+			color: $Color-secondary-200;
+			padding: 10px 5px;
+		}
+
+		&__dropdown {
+			width: 90%;
+			margin: 0;
+			padding: 12px;
+			border: none;
+			background: $Color-primary-200;
+			box-shadow: none;
+			font-family: "NotoSans";
+			font-weight: 400;
+			position: absolute;
+			left: 17px;
+		}
+
+		&__trigger {
+			border: none;
+			left: 16px;
+		}
+
+		& li {
+			padding: 10px 0;
+			min-height: 18px;
+			color: $Color-primary-100;
+			font-size: 12px;
+		}
+
+		& li.selected {
+			background-color: transparent;
+			color: inherit;
+			font-weight: 400;
+		}
+
+		& li:hover {
+			background-color: transparent;
+			color: $Color-primary-300;
+		}
+	}
+
+	.jq-selectbox__trigger-arrow {
+		background-image: url("../images/icon/sort.svg");
+		background-repeat: no-repeat;
+		width: 15px;
+		height: 15px;
+		border: none;
+		top: 9px;
+		left: 0;
+	}
+
+	.select-style {
+		margin-right: 16px;
+
+		&::selection {
+			border: 1px solid transparent;
+		}
+	}
+}

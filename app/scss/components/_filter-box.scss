@@ -1,0 +1,102 @@
+.filter-box {
+	display: flex;
+	flex-wrap: wrap;
+
+	&__select {
+	}
+
+	&__btn {
+		height: 100%;
+		color: $Color-primary-200;
+		padding: 12px 118px;
+		background-color: $Color-primary-300;
+		border: 2px solid $Color-primary-300;
+		border-radius: 15px;
+		transition: all 0.3s;
+
+		&:hover {
+			color: $Color-primary-300;
+			background-color: $Color-primary-200;
+		}
+
+		&:active {
+			color: $Color-primary-200;
+			background-color: $Color-primary-300;
+		}
+	}
+
+	.jq-selectbox {
+		&__select {
+			width: 170px;
+			height: 100%;
+			padding: 15px 16px;
+			border: 1px solid $Color-secondary-300;
+			border-radius: 15px;
+			box-shadow: 0px 0px 27px rgba(0, 0, 0, 0.04);
+			font-family: "NotoSans";
+			font-weight: 400;
+			font-size: 15px;
+			line-height: 1;
+			color: $Color-primary-100;
+			text-shadow: none;
+			background: $Body-bg;
+			margin-bottom: 25px;
+			transition: all 0.3s;
+
+			&:hover {
+				background: $Color-primary-200;
+			}
+		}
+
+		&__dropdown {
+			width: 100%;
+			margin: -72px 0 0;
+			padding: 3px 16px;
+			border: 1px solid $Color-secondary-300;
+			background: $Color-primary-200;
+			border-radius: 15px;
+			box-shadow: none;
+			font-family: "NotoSans";
+			font-weight: 400;
+		}
+
+		&__trigger {
+			border-left: none;
+		}
+		& li {
+			min-height: 18px;
+			padding: 10px 0;
+			color: #231f20;
+			font-size: 15px;
+		}
+
+		& li.selected {
+			background-color: transparent;
+			color: inherit;
+			font-weight: 600;
+		}
+
+		& li:hover {
+			background-color: transparent;
+			color: $Color-primary-300;
+		}
+	}
+
+	.jq-selectbox__trigger-arrow {
+		position: absolute;
+		background-image: url("../images/icon/expand-more.svg");
+		width: 13px;
+		height: 8px;
+		border: none;
+		top: 20px;
+		right: 16px;
+	}
+
+	.select-style {
+		margin-right: 16px;
+
+		&::selection {
+			border: 1px solid $Color-primary-300;
+		}
+	}
+}

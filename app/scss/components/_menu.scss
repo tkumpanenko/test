@@ -1,0 +1,29 @@
+.menu {
+	display: flex;
+	justify-content: space-between;
+	align-items: center;
+	margin: 0 auto;
+	padding: 19px 0;
+	z-index: 10;
+
+	&__list {
+		margin-left: auto;
+		display: flex;
+		justify-content: space-between;
+		align-items: center;
+
+		&--footer{
+			margin-right: auto;
+		}
+	}
+
+	&__list-item {
+		margin-right: 40px;
+	}
+
+	&__list-link {
+		color: $Color-primary-200;
+		padding: 10px 0;
+	}
+}
+
